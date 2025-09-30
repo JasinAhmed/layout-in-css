@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Layout 3</title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="basic-layout-3">
-    <header><h1>Basic Layout 3</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Layout 3</title>
+  <style>
+    /* Doe hier jouw ding! */
+    body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}
+    #basic-layout-3{width:300px;border:1px solid;padding:10px;box-sizing:border-box}
+    main{background:gold;height:200px;margin-bottom:10px}
+    footer{background:#222;height:40px;margin-bottom:10px}
+    .bottom{display:flex;gap:10px}
+    .blue{background:deepskyblue;flex:1;height:40px}
+    .pink{background:deeppink;flex:1;height:40px}
+  </style>
+</head>
+<body>
+  <div id="basic-layout-3">
     <main></main>
     <footer></footer>
-  </body>
+    <div class="bottom">
+      <div class="blue"></div>
+      <div class="pink"></div>
+    </div>
+  </div>
+</body>
 </html>
