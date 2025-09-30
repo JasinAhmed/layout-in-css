@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Layout 9</title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="basic-layout-9">
-    <header><h1>Basic Layout 9</h1></header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Over ons</a>
-      <a href="#">Contact</a>
-    </nav>
-    <main><a href="../index.html">Terug naar het overzicht</a></main>
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Layout 9</title>
+  <style>
+    /* Doe hier jouw ding! */
+    body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}
+    #basic-layout-9{width:320px;border:1px solid;box-sizing:border-box;padding:10px}
+    .top{display:flex;gap:12px;margin-bottom:10px}
+    .logo{background:deepskyblue;width:60px;height:60px}
+    nav{background:deeppink;flex:1;display:flex;align-items:center;gap:8px;padding:8px;border-radius:4px}
+    nav a{background:#fff;padding:6px 10px;border-radius:999px;text-decoration:none;color:#111;font-size:12px}
+    main{background:gold;height:200px;margin:10px 0}
+    footer{background:#222;height:40px}
+  </style>
+</head>
+<body>
+  <div id="basic-layout-9">
+    <div class="top">
+      <div class="logo"></div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Over ons</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <main></main>
     <footer></footer>
-  </body>
+  </div>
+</body>
 </html>
