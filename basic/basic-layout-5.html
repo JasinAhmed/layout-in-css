@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Basic Layout 5</title>
-  <style>
-    /* Doe hier jouw ding! */
-    body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}
-    #basic-layout-5{width:300px;border:1px solid;box-sizing:border-box;padding:12px;display:flex;flex-direction:column;gap:18px}
-    .bar{height:50px}
-    .blue{background:deepskyblue;width:80%;margin-left:auto}
-    .pink{background:deeppink;width:85%}
-    .yellow{background:gold;width:70%;margin-left:auto}
-    .black{background:#222;width:80%}
-  </style>
-</head>
-<body>
-  <div id="basic-layout-5">
-    <div class="bar blue"></div>
-    <div class="bar pink"></div>
-    <div class="bar yellow"></div>
-    <div class="bar black"></div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout 5</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+          body {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap:  10px ;
+          }
+
+          header {
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 13;
+          }
+
+          nav {
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 9;
+          }
+
+          main {
+            grid-row-start: 6;
+            grid-row-end: 10;
+            grid-column-start: 4;
+            grid-column-end: 13;
+          }
+
+          footer {
+            grid-row-start: 10;
+            grid-row-end: 13;
+            grid-column-start: 4;
+            grid-column-end: 13;
+          }    </style>
+  </head>
+  <body id="basic-layout-5">
+    <header><h1>Basic Layout 5</h1></header>
+    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>

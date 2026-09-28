@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Basic Layout 2</title>
-  <style>
-    /* Doe hier jouw ding! */
-    body{display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0}
-    #basic-layout-2{width:400px;border:1px solid;padding:10px;box-sizing:border-box}
-    header{background:deepskyblue;height:60px;margin-bottom:10px}
-    .content{display:flex;gap:10px;margin-bottom:10px}
-    nav{background:deeppink;width:100px;height:200px}
-    main{background:gold;flex:1;height:200px}
-    footer{background:#222;height:40px}
-  </style>
-</head>
-<body>
-  <div id="basic-layout-2">
-    <header></header>
-    <div class="content">
-      <nav></nav>
-      <main></main>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout 2</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+          body {
+            display: grid;
+            grid-template-rows: 100px 50px 1fr 70px;
+            grid-template-columns: 1fr;
+            gap:  10px ;
+          }     
+          
+          header {
+            grid-row: 1;
+          }
+
+          nav {
+            grid-row: 2;
+          }
+
+          main {
+            grid-row: 3;
+          }
+
+          footer {
+            grid-row-start: 4;
+          }
+
+    </style>
+  </head>
+  <body id="basic-layout-2">
+    <header><h1>Basic Layout 2</h1></header>
+    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+    <main></main>
     <footer></footer>
-  </div>
-</body>
+  </body>
 </html>
